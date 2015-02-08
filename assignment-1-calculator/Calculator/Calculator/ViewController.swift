@@ -25,12 +25,16 @@ class ViewController: UIViewController {
             } else if digit == "." && decimalUsed == false {
                 decimalUsed = true
             }
-
             display.text = display.text! + digit
         } else {
-            display.text = digit
             userIsInTheMiddleOfTypingANumber = true
-
+            
+            if digit == "." {
+                decimalUsed = true
+                display.text = "0."
+            } else {
+                display.text = digit
+            }
         }
     }
     

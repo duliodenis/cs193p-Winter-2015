@@ -11,6 +11,10 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var display: UILabel!
+    @IBOutlet weak var history: UILabel!
+    
+    var operandStack = Array<Double>()
+    var operationStack = Array<Double>()
     
     var userIsInTheMiddleOfTypingANumber = false
     var decimalUsed = false
@@ -71,13 +75,16 @@ class ViewController: UIViewController {
         }
     }
     
-    var operandStack = Array<Double>()
-    
     @IBAction func enter() {
         userIsInTheMiddleOfTypingANumber = false
         decimalUsed = false
         operandStack.append(displayValue)
         println("operandStack = \(operandStack)")
+        
+        history.text = ""
+        for element in operandStack {
+            history.text = history.text! + "\(element), "
+        }
     }
     
     var displayValue: Double {

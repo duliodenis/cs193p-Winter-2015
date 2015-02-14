@@ -223,6 +223,15 @@
                                     <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9cm-Ej-c9Y"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWO-sw-xi3">
+                                <rect key="frame" x="16" y="67" width="568" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Gfo-1c-x38"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -302,6 +311,7 @@
                             <constraint firstItem="fI6-SC-GRH" firstAttribute="top" secondItem="Khe-qd-Dcp" secondAttribute="bottom" constant="8" id="kFy-wt-I8h"/>
                             <constraint firstItem="fI6-SC-GRH" firstAttribute="height" secondItem="83s-Ma-tYR" secondAttribute="height" id="knO-db-4sU"/>
                             <constraint firstItem="loL-nd-upq" firstAttribute="top" secondItem="Cft-e0-pt1" secondAttribute="bottom" constant="8" id="lWf-Jq-rGr"/>
+                            <constraint firstItem="JWO-sw-xi3" firstAttribute="leading" secondItem="c5X-LM-rSW" secondAttribute="leading" id="laf-LY-muz"/>
                             <constraint firstItem="fI6-SC-GRH" firstAttribute="height" secondItem="Khe-qd-Dcp" secondAttribute="height" id="mPR-UO-Ii4"/>
                             <constraint firstItem="fI6-SC-GRH" firstAttribute="width" secondItem="TkE-aV-UEr" secondAttribute="width" id="oK1-p2-fEN"/>
                             <constraint firstItem="fI6-SC-GRH" firstAttribute="width" secondItem="WaB-q5-Dyv" secondAttribute="width" id="oNH-K5-sGG"/>
@@ -309,7 +319,9 @@
                             <constraint firstItem="Khe-qd-Dcp" firstAttribute="top" secondItem="c5X-LM-rSW" secondAttribute="bottom" constant="8" id="p45-Ft-hYb"/>
                             <constraint firstItem="c5X-LM-rSW" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="pMc-WX-oVc"/>
                             <constraint firstItem="B2i-k6-KVY" firstAttribute="leading" secondItem="cIo-y4-JnI" secondAttribute="trailing" constant="8" id="qQy-KU-8LB"/>
+                            <constraint firstItem="JWO-sw-xi3" firstAttribute="top" secondItem="c5X-LM-rSW" secondAttribute="bottom" constant="8" id="r8w-3l-RUk"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="z7C-yL-S2U" secondAttribute="bottom" constant="8" id="rAu-YQ-0pK"/>
+                            <constraint firstItem="JWO-sw-xi3" firstAttribute="trailing" secondItem="c5X-LM-rSW" secondAttribute="trailing" id="rsa-Bb-B7d"/>
                             <constraint firstItem="cIo-y4-JnI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="sPf-Ha-zeg"/>
                             <constraint firstItem="c5X-LM-rSW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="yMZ-Fa-HJb"/>
                             <constraint firstItem="mpx-4h-AZw" firstAttribute="top" secondItem="I8f-Hm-lwR" secondAttribute="bottom" constant="8" id="yPr-bH-XI0"/>
@@ -320,6 +332,7 @@
                     </view>
                     <connections>
                         <outlet property="display" destination="c5X-LM-rSW" id="baL-Iu-gFS"/>
+                        <outlet property="history" destination="JWO-sw-xi3" id="H4E-Mr-yIO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
